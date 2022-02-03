@@ -11,7 +11,7 @@ setInterval(
         var picture = window.document.querySelector("picture")
         
         var h2 = window.document.querySelector("h2")
-        h2.innerHTML = `Agora são ${hora}:${minuto}:${preencherZero(segundo)} do dia`
+        h2.innerHTML = `Agora são ${preencherZero(hora)}:${preencherZero(minuto)}:${preencherZero(segundo)} do dia`
         
         var a = window.document.querySelector("a")
         a.onmouseout = () => {
