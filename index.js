@@ -30,7 +30,7 @@ setInterval(
         } else if (11 < hora && hora < 18) {
             body.backgroundColor = "var(--cor-fundo-tarde)"
     
-            picture.innerHTML = '<source media="(max-width: 400px)" srcset="images/tarde-pq.png" type="image/png"><img src="images/tarde.png" alt="Xícara de Cappuccino">'
+            picture.innerHTML = '<source media="(max-width: 400px)" srcset="images/tarde-pq.png" type="image/png"><img src="images/tarde.png" alt="Pescadores">'
     
             a.onmouseenter = () => {
                 a.style.color = "var(--cor-link-tarde)"
@@ -39,7 +39,7 @@ setInterval(
         } else {
             body.backgroundColor = "var(--cor-fundo-noite)"
             
-            picture.innerHTML = '<source media="(max-width: 400px)" srcset="images/noite-pq.png" type="image/png"><img src="images/noite.png" alt="Xícara de Cappuccino">'
+            picture.innerHTML = '<source media="(max-width: 400px)" srcset="images/noite-pq.png" type="image/png"><img src="images/noite.png" alt="Fogueira">'
             
             a.onmouseenter = () => {
                 a.style.color = "var(--cor-link-noite)"
