@@ -35,3 +35,13 @@ section {
 a:hover {
     text-decoration: underline;
 }
+
+img {
+    width: 50%;
+}
+
+@media (max-width: 456px) {
+    img {
+        width: auto;
+    }
+}
