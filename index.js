@@ -30,27 +30,17 @@ function atualizarHorario() {
 
 function verificarPeriodo(h) {
     if (5 < h && h < 12) {
-        alterarLayout("manha")
+        alterarLayout("manha", "Xícara de Cappuccino")
     } else if (11 < h && h < 18) {
-        alterarLayout("tarde")
+        alterarLayout("tarde", "Pescadores")
     } else {
-        alterarLayout("noite")
+        alterarLayout("noite", "Fogueira")
     }
 }
 
-function alterarLayout(periodo) {
-    var alt
-
+function alterarLayout(periodo, alt) {
     body.style.backgroundColor = `var(--cor-fundo-${periodo})`
     
-    if (periodo == "manha") {
-        alt = "Xícara de Cappuccino"
-    } else if (periodo == "tarde") {
-        alt = "Pescadores"
-    } else {
-        alt = "Fogueira"
-    }
-
     picture.innerHTML = `<source media="(max-width: 456px)" srcset="images/${periodo}-pq.png" type="image/png"><img src="images/${periodo}.png" alt="${alt}">`
     
     a.onmouseenter = () => {
